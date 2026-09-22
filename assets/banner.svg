@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#31103f" />
+    </linearGradient>
+    
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e535ab" />
+      <stop offset="50%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e535ab" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 52px; fill: url(#titleGrad); }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #cbd5e1; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #ffffff; }
+      .node-pulse { animation: pulse 3s infinite alternate; }
+      .dash-flow { stroke-dasharray: 8 6; animation: dash 20s linear infinite; }
+      @keyframes pulse { 0% { r: 6px; opacity: 0.6; } 100% { r: 10px; opacity: 1; } }
+      @keyframes dash { to { stroke-dashoffset: -200; } }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic / Background Graphic Elements (Opacity low to stay strictly in background) -->
+  <g opacity="0.25">
+    <!-- Grid -->
+    <path d="M0 64 H1200 M0 128 H1200 M0 192 H1200 M0 256 H1200" stroke="#334155" stroke-width="1" />
+    <path d="M150 0 V320 M300 0 V320 M450 0 V320 M600 0 V320 M750 0 V320 M900 0 V320 M1050 0 V320" stroke="#334155" stroke-width="1" />
+
+    <!-- Graph Connections (GraphQL Schema Graph Mesh) -->
+    <path class="dash-flow" d="M 850 70 L 980 130 L 1100 80 L 1050 240 L 900 250 L 850 70 Z" fill="none" stroke="#e535ab" stroke-width="2" />
+    <path class="dash-flow" d="M 980 130 L 900 250 M 850 70 L 1050 240 M 1100 80 L 900 250" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    
+    <!-- Animated Nodes -->
+    <circle cx="850" cy="70" r="8" fill="#e535ab" class="node-pulse" />
+    <circle cx="980" cy="130" r="8" fill="#38bdf8" class="node-pulse" />
+    <circle cx="1100" cy="80" r="8" fill="#a855f7" class="node-pulse" />
+    <circle cx="1050" cy="240" r="8" fill="#f472b6" class="node-pulse" />
+    <circle cx="900" cy="250" r="8" fill="#38bdf8" class="node-pulse" />
+  </g>
+
+  <!-- Decorative Pills / Tags on Right -->
+  <g transform="translate(820, 140)">
+    <rect x="0" y="0" width="100" height="28" rx="14" fill="#e535ab" opacity="0.2" />
+    <rect x="0" y="0" width="100" height="28" rx="14" fill="none" stroke="#e535ab" stroke-width="1" />
+    <text x="50" y="18" text-anchor="middle" class="badge-text" fill="#f472b6">Federation</text>
+
+    <rect x="115" y="-30" width="110" height="28" rx="14" fill="#38bdf8" opacity="0.2" />
+    <rect x="115" y="-30" width="110" height="28" rx="14" fill="none" stroke="#38bdf8" stroke-width="1" />
+    <text x="170" y="-12" text-anchor="middle" class="badge-text" fill="#38bdf8">Gateways</text>
+
+    <rect x="115" y="30" width="125" height="28" rx="14" fill="#a855f7" opacity="0.2" />
+    <rect x="115" y="30" width="125" height="28" rx="14" fill="none" stroke="#a855f7" stroke-width="1" />
+    <text x="177" y="48" text-anchor="middle" class="badge-text" fill="#c084fc">Schema Registry</text>
+  </g>
+
+  <!-- GraphQL Hex Logo Icon -->
+  <g transform="translate(70, 75)" filter="url(#glow)">
+    <polygon points="40,0 75,20 75,60 40,80 5,60 5,20" fill="none" stroke="#e535ab" stroke-width="4" />
+    <circle cx="40" cy="0" r="6" fill="#e535ab" />
+    <circle cx="75" cy="20" r="6" fill="#e535ab" />
+    <circle cx="75" cy="60" r="6" fill="#e535ab" />
+    <circle cx="40" cy="80" r="6" fill="#e535ab" />
+    <circle cx="5" cy="60" r="6" fill="#e535ab" />
+    <circle cx="5" cy="20" r="6" fill="#e535ab" />
+    <polygon points="40,12 64,26 64,54 40,68 16,54 16,26" fill="url(#accentGrad)" opacity="0.8" />
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <text x="165" y="115" class="title">Awesome GraphQL Platform</text>
+  <text x="165" y="155" class="subtitle">The Ultimate Ecosystem Guide to GraphQL Platforms, Gateways &amp; Federation</text>
+
+  <!-- Sub-details / Tags -->
+  <g transform="translate(165, 200)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="75" y="21" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">⚡ Managed SaaS</text>
+
+    <!-- Pill 2 -->
+    <rect x="160" y="0" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="240" y="21" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">🛠️ Open-Source Engines</text>
+
+    <!-- Pill 3 -->
+    <rect x="330" y="0" width="170" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="415" y="21" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">🌐 Edge &amp; Mesh Caching</text>
+  </g>
+</svg>
