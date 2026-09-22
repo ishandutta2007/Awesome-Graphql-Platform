@@ -2,7 +2,7 @@
 
 <p concentration="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Graphql-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Graphql-Platform?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Graphql-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Graphql-Platform?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Graphql-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Graphql-Platform?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -56,9 +56,9 @@ Below is a curated comparison of leading commercial managed GraphQL cloud platfo
 
 ## 🛠️ Open-Source GitHub Projects
 
-Explore top production-ready open-source engines, GraphQL servers, federation gateways, schema registries, and developer tools. Sorted by **GitHub Star Count** (descending).
+Explore top production-ready open-source engines, GraphQL servers, federation gateways, schema registries, and developer tools. Sorted by **GitHub Stars_Count** (descending).
 
-| 📦 Open-Source Project | 🌟 GitHub Stars | 📜 License | ℹ️ Description & Architectural Role |
+| 📦 Open-Source Project | 🌟 GitHub_Stars | 📜 License | ℹ️ Description & Architectural Role |
 | :--- | :--- | :--- | :--- |
 | ⚡ **[Hasura GraphQL Engine](https://github.com/hasura/graphql-engine)** | [<img src="https://img.shields.io/github/stars/hasura/graphql-engine?style=social&color=white" alt="Hasura Stars"/>](https://github.com/hasura/graphql-engine/stargazers) | Apache-2.0 | Blazing-fast engine that connects to databases (Postgres, MySQL, SQL Server, Snowflake) and instantly exposes a secure GraphQL API. |
 | 🚀 **[Apollo Server](https://github.com/apollographql/apollo-server)** | [<img src="https://img.shields.io/github/stars/apollographql/apollo-server?style=social&color=white" alt="Apollo Server Stars"/>](https://github.com/apollographql/apollo-server/stargazers) | MIT | The industry-standard spec-compliant JavaScript/TypeScript GraphQL server for standalone APIs or federated subgraphs. |
@@ -90,7 +90,7 @@ Contributions are welcome! Please follow these simple guidelines:
 
 1. Fork this repository.
 2. Update or add new entries to [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Graphql-Platform/README.md) following the tabular schema.
-3. Ensure exact pricing, free tier limits, star badges, and factual descriptions are supplied.
+3. Ensure exact pricing, free tier limits, Stars_Badges, and factual descriptions are supplied.
 4. Open a Pull Request!
 
 Also check out curated awesome resources at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
